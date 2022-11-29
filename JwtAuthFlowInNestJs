@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-11-29T06:29:21.631Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.5.3" etag="S1Vhwa8qPygL_POsU5gj" type="github"><diagram id="TQKbXaJ779Dp48g6qqBK">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-29T07:05:50.986Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="mmmjrQ916hecYyVW1ebh" version="20.5.3" type="github">
+  <diagram id="TQKbXaJ779Dp48g6qqBK" name="Page-1">
+    <mxGraphModel dx="5652" dy="4294" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-7" value="app" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="-30" width="860" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-1" value="app.controller.ts" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-7">
+          <mxGeometry x="40" y="50" width="590" height="521" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-2" value="UseGuards(AuthGuard(&#39;local&#39;))" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-1">
+          <mxGeometry x="10" y="35" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-23" value="Login(@Request req:any){&lt;br&gt;&lt;br&gt;//Passport automatically creates a user object, based on the value we return from the validate() method, and assigns it to the Request object as req.user&lt;br&gt;&lt;br&gt;return this.authservice.Login(req.user)&lt;br&gt;}" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-1">
+          <mxGeometry x="10" y="161" width="390" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="XgkvWVfAa5EE2RQ2S44D-1" source="XgkvWVfAa5EE2RQ2S44D-38" target="XgkvWVfAa5EE2RQ2S44D-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XgkvWVfAa5EE2RQ2S44D-1" source="XgkvWVfAa5EE2RQ2S44D-38" target="XgkvWVfAa5EE2RQ2S44D-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-38" value="&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;If the credentials provided are valid then it let user pass into login method below, if not our inbuilt passport guard (AuthGuard) will throw an unauthorized exception)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-1">
+          <mxGeometry x="-120" y="91" width="820" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-8" value="auth" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="20" width="950" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-9" value="Local.strategy.ts" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-8">
+          <mxGeometry x="30" y="40" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-20" value="&lt;span style=&quot;&quot;&gt;validate(){&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;// Logic to login user&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;}&lt;/span&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ffff;shape=mxgraph.archimate3.application;appType=func;archiType=rounded;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-9">
+          <mxGeometry x="10" y="65" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-22" value="Class calls &lt;u&gt;validate&lt;/u&gt; function" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XgkvWVfAa5EE2RQ2S44D-9">
+          <mxGeometry y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XgkvWVfAa5EE2RQ2S44D-14" target="XgkvWVfAa5EE2RQ2S44D-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XgkvWVfAa5EE2RQ2S44D-14" target="XgkvWVfAa5EE2RQ2S44D-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XgkvWVfAa5EE2RQ2S44D-14" value="Guards triggers, defind auth stratergies" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="810" y="84" width="230" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
